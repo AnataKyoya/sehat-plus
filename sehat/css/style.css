@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.bungkus {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 90px;
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+    background-color: #ffffff;
+    border-bottom: 1px solid #a4a4a447;
+    z-index: 999;
+    transition: 0.5s;
+    padding-right: 70px;
+}
+
+.nav.close {
+    height: 0;
+    padding: 0;
+}
+
+.nav.close>* {
+    display: none;
+}
+
+.nav>* {
+    display: block;
+}
+
+.kanan,
+.kiri {
+    display: flex;
+    align-items: center;
+}
+
+.kanan img {
+    width: 150px;
+}
+
+.kanan ul {
+    display: flex;
+}
+
+.kanan li {
+    list-style-type: none;
+    margin-left: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.kanan li:nth-child(1) a {
+    color: #e8505b;
+}
+
+.kanan li::before {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: #e8505b;
+    position: absolute;
+    bottom: -3px;
+    transition: 0.5s;
+}
+
+.kanan li:hover::before {
+    width: 100%;
+}
+
+.kanan a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.logreg {
+    padding: 10px 20px;
+    background-color: #e2000085;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.logreg:hover {
+    background-color: #e8505b;
+}
+
+.logreg a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding-top: 81.5px;
+}
+
+.lembar {
+    width: 100%;
+    height: 100vh;
+}
+
+.lembar:not(#atas) {
+    padding: 70px 90px;
+}
+
+#atas {
+    height: fit-content;
+}
+
+.banner {
+    background-image: url("../img/1x/Asset 3.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 45%;
+    background-position-x: 99%;
+    background-color: #384877;
+    width: 100%;
+    height: 400px;
+    padding: 0 90px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 50px;
+    color: #f5f5f5;
+}
+
+.banner h1 {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.slogan {
+    font-size: 2em;
+    width: 50%;
+    font-weight: 200;
+    line-height: 37px;
+}
+
+.pencarian {
+    width: 550px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    margin-top: 40px;
+}
+
+.val-cari {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #0000006b;
+}
+
+.cari {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    border-radius: 0;
+    padding: 13px 20px;
+    font-size: 1.2em;
+}
+
+.cari::-webkit-input-placeholder {
+    color: #a6a6a6;
+}
+
+.hasil {
+    width: 100%;
+    top: 65px;
+    position: absolute;
+    height: fit-content;
+}
+
+.ikon-cari {
+    padding: 0 40px;
+    height: 100%;
+    background-color: #e8505b;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hasil {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    border: 1px solid #0000006b;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.hasil a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.kertas-hasil {
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.kertas-hasil:hover {
+    background-color: #ffffff;
+}
+
+.img-hasil {
+    width: 200px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-hasil img {
+    width: 100%;
+}
+
+.teks-hasil {
+    margin-top: 10px;
+}
+
+.teks-hasil p {
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    width: 100%;
+}
+
+.ttl {
+    font-size: 2em;
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.artikel {
+    margin-top: 50px;
+}
+
+.bungkus-alat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.alat {
+    height: fit-content;
+}
+
+.lembar-title {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kertas-alat {
+    width: 150px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.lembar-alat {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    border: 1px solid #000000;
+}
+
+.nama-alat {
+    color: #000000;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.img-alat {
+    width: 100%;
+    height: 100%;
+
+}
+
+.img-alat img {
+    width: 100%;
+}
+
+.bungkus-artikel {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+.bungkus-artikel a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 7.5px;
+}
+
+.kertas-artikel {
+    width: 400px;
+    height: 280px;
+    background-color: #f5f5f5;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.img-artikel {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img-artikel img {
+    width: 100%;
+}
+
+.teks-artikel {
+    padding: 15px;
+}
+
+.data-artikel {
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    width: 100%;
+}
+
+.lembar-produk {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.lembar-produk::-webkit-scrollbar {
+    display: none;
+}
+
+.kertas-produk {
+    width: 300px;
+    height: 399px;
+    background-color: #f5f5f5;
+    margin: 10px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-produk {
+    width: 100%;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.img-produk img {
+    height: 80%;
+}
+
+.teks-produk {
+    padding: 15px;
+}
+
+.merek-prdk {
+    padding: 5px 10px;
+    background-color: #384877;
+    color: #f5f5f5;
+    border-radius: 8px;
+    width: fit-content;
+    font-weight: 500;
+}
+
+.nama-prdk {
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-weight: 800;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    width: 100%;
+}
+
+.info-prdk {
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    width: 100%;
+}
+
+.info-harga {
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pluskeranjang {
+    padding: 10px;
+    background-color: #e8505b;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.harga-prdk {
+    margin-left: 40px;
+    font-size: 1.3em;
+}
+
+@media (max-width: 720px) {}
