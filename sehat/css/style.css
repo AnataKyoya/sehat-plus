@@ -31,7 +31,7 @@ body {
     position: fixed;
     background-color: #ffffff;
     border-bottom: 1px solid #a4a4a447;
-    z-index: 999;
+    z-index: 99;
     transition: 0.5s;
     padding-right: 70px;
 }
@@ -136,7 +136,7 @@ main {
     background-position-x: 99%;
     background-color: #384877;
     width: 100%;
-    height: 400px;
+    height: 450px;
     padding: 0 90px;
     display: flex;
     justify-content: start;
@@ -189,7 +189,7 @@ main {
 }
 
 .cari::-webkit-input-placeholder {
-    color: #a6a6a6;
+    color: #cbcbcb;
 }
 
 .hasil {
@@ -468,6 +468,134 @@ main {
 .harga-prdk {
     margin-left: 40px;
     font-size: 1.3em;
+}
+
+.daftar-masuk {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #88888832;
+    backdrop-filter: blur(20px);
+}
+
+.daftar-masuk.hide {
+    display: none;
+}
+
+.lembar-dm {
+    background-image: url("../img/1x/Asset 3.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 65%;
+    background-position-x: 120%;
+    width: 900px;
+    height: 550px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    background-color: #384877;
+    overflow: hidden;
+}
+
+.close-gb {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 3em;
+    cursor: pointer;
+}
+
+.gerbang-masuk,
+.gerbang-daftar {
+    width: 100%;
+    height: 100%;
+}
+
+.gerbang-masuk.clsd {
+    display: none;
+}
+
+.gerbang-daftar.clsd {
+    display: none;
+}
+
+.kertas-dm {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 100%;
+    padding: 40px;
+    padding-top: 25px;
+    background-color: #f5f5f5;
+    border-bottom-right-radius: 50px;
+}
+
+.title-gerbang {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+.dwn {
+    color: #0000006b;
+}
+
+.up {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.in {
+    cursor: pointer;
+}
+
+.inputan {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.gb label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.in-same {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #0000006b;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.lupa-pass {
+    text-decoration: none;
+    color: #384877;
+    margin-bottom: 40px;
+}
+
+.btn-gb {
+    width: 100%;
+    height: fit-content;
+    padding: 15px;
+    background-color: #e8505b;
+    border-radius: 8px;
+    color: #f5f5f5;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: 0;
+    margin-top: 10px;
 }
 
 @media (max-width: 720px) {}
