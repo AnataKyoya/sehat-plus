@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     $('a[href^="#"]').on('click', function (event) {
         event.preventDefault();
         var target = $(this.getAttribute('href'));
@@ -30,5 +29,32 @@ $(document).ready(function () {
                 $(".hasil").empty()
             }
         }
+    });
+
+    $(".close-gb").click((e) => {
+        e.preventDefault();
+        $(".daftar-masuk").addClass("hide");
+        $(".in-same").val("");
+    });
+
+    $(".logreg").click((e) => {
+        e.preventDefault();
+        $(".daftar-masuk").removeClass("hide");
+    });
+
+    $(".in").click(function (e) {
+        e.preventDefault();
+        $(".gerbang-masuk").removeClass("clsd");
+        $(".gerbang-daftar").addClass("clsd");
+        $(".in").removeClass("dwn");
+        $(".up").addClass("dwn");
+    });
+
+    $(".up").click(function (e) {
+        e.preventDefault();
+        $(".gerbang-masuk").addClass("clsd");
+        $(".gerbang-daftar").removeClass("clsd");
+        $(".in").addClass("dwn");
+        $(".up").removeClass("dwn");
     });
 });
