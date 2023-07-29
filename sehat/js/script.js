@@ -46,15 +46,20 @@ $(document).ready(function () {
         e.preventDefault();
         $(".gerbang-masuk").removeClass("clsd");
         $(".gerbang-daftar").addClass("clsd");
-        $(".in").removeClass("dwn");
-        $(".up").addClass("dwn");
+        $(".in").addClass("hide");
+        $(".up").removeClass("hide");
+        $(".upup").addClass("hide");
+        $(".inin").removeClass("hide");
+
     });
 
     $(".up").click(function (e) {
         e.preventDefault();
         $(".gerbang-masuk").addClass("clsd");
         $(".gerbang-daftar").removeClass("clsd");
-        $(".in").addClass("dwn");
-        $(".up").removeClass("dwn");
+        $(".up").addClass("hide");
+        $(".in").removeClass("hide");
+        $(".inin").addClass("hide");
+        $(".upup").removeClass("hide");
     });
 });
